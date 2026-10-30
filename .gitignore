@@ -1,55 +1,48 @@
-# Prerequisites
-*.d
+# Keil MDK user-specific settings
+*.uvguix.*
+*.uvgui.*
+*.uvgui
 
-# Object files
+# Keil MDK build output
+**/Objects/*
+!**/Objects/*.hex
+**/Listings/
 *.o
-*.ko
 *.obj
+*.crf
+*.d
+*.dep
+*.axf
 *.elf
-
-# Linker output
-*.ilk
 *.map
-*.exp
+*.lst
+*.lnp
+*.sct.bak
+*.build_log.htm
 
-# Precompiled Headers
-*.gch
-*.pch
+# Keep the checked-in HEX reference firmware; ignore other raw binaries
+*.bin
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# Editor and operating-system files
+.vscode/
+.idea/
+.vs/
+*.user
+*.suo
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
-
-# debug information files
-*.dwo
+# Keep documentation and media trackable
+!docs/**/*.pdf
+!docs/**/*.md
+!docs/**/*.png
+!docs/**/*.jpg
+!docs/**/*.jpeg
+!docs/**/*.webp
+!docs/**/*.svg

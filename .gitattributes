@@ -1,0 +1,13 @@
+# Documentation and packaged tools are binary artifacts.
+*.pdf binary
+*.pptx binary
+*.docx binary
+*.exe binary
+*.dll binary
+*.pdb binary
+*.db binary
+*.bin binary
+*.sample binary
+
+# Firmware images use text records but should not receive line-ending conversion.
+*.hex -text

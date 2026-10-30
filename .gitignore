@@ -46,3 +46,4 @@ Desktop.ini
 !docs/**/*.jpeg
 !docs/**/*.webp
 !docs/**/*.svg
+!docs/competition/official-package/**/*.bin
